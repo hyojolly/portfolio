@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HYOJUNG's Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio for frontend developer Hyojung"
+    />
+    <meta name="author" content="Hyojung" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="imgs/navbar-favicon.png" />
+    <!-- Fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/8c12ab8285.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font -->
+    <link rel="preconnect" href="//fdn.fontcdn.ir" />
+    <link rel="preconnect" href="//v1.fontapi.ir" />
+    <link
+      href="https://v1.fontapi.ir/css/SFProDisplay:300;400;600;800"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!---------- Navbar ---------->
+    <nav id="navbar">
+      <div class="navbar__content">
+        <a href="#" class="navbar__icon">
+          <img src="imgs/favicon.png" alt="navbar-icon" />
+        </a>
+        <ul class="navbar__menu">
+          <li class="navbar__menu__item" data-link="#home">Home</li>
+          <li class="navbar__menu__item" data-link="#about">About</li>
+          <li class="navbar__menu__item" data-link="#skills">Skills</li>
+          <li class="navbar__menu__item" data-link="#work">My work</li>
+          <li class="navbar__menu__item" data-link="#contact">Contact</li>
+        </ul>
+        <!---------- Toggle button ---------->
+        <button class="navbar__toggle-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+    <!---------- Home ---------->
+    <section id="home">
+      <div class="home__container">
+        <img
+          src="imgs/me.png"
+          alt="Hyojung's profile photo"
+          class="home__avatar"
+        />
+        <h1 class="home__title">Hello, I'm Hyojung</h1>
+        <h2 class="home__description">Front-end Software Developer</h2>
+        <p class="home__description">24시간이 부족한 개발자 장효정입니다.</p>
+        <button class="home__contact">Contact Me</button>
+      </div>
+    </section>
+    <div style="background-color: white">&nbsp;</div>
+    <!---------- About ---------->
+    <section id="about" class="section">
+      <div class="about__title section__container">
+        <h1>About me</h1>
+        <div class="about__title__paragraph" style="margin-bottom: 80px">
+          <p class="about__title__description">
+            팀 프로젝트를 통해 서버와 통신하여 작업한 경험이 있습니다.
+          </p>
+          <p>사용자 중심의 웹사이트 개발을 추구하고 편의성을 개선합니다.</p>
+        </div>
+        <div class="about__schools">
+          <!-- school (1) -->
+          <div class="school">
+            <img src="imgs/schools/tis.png" alt="tis" class="school__logo" />
+            <div class="school__description">
+              <p class="school__name">
+                TIS Information Technology Education Center
+              </p>
+              <p class="school__period">2022 July - 2023 January</p>
+            </div>
+          </div>
+          <!-- school (2) -->
+          <div class="school">
+            <img src="imgs/schools/skku.png" alt="skku" class="school__logo" />
+            <div class="school__description">
+              <p class="school__name">SungKyunKwan University</p>
+              <p class="school__period">2018 March - 2022 August</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- Skills ---------->
+    <section id="skills" class="section">
+      <div class="section__container">
+        <h1>Skills</h1>
+        <p>Key skills : JavaScript(ES6), ReactJS, HTML&CSS</p>
+        <p>Experienced skills : Git, Github, Docker, DBeaver</p>
+        <p>etc : Chinese, English, Communication skills</p>
+        <div class="skillset">
+          <div class="about__majors">
+            <!-- about (1) -->
+            <div class="major">
+              <div class="major__icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <h2 class="major__title">JavaScript</h2>
+              <p class="major__description">
+                ES6 기본 문법과 <br />중요 개념(비동기 등)을<br />이해하고
+                있습니다.
+              </p>
+            </div>
+            <!-- about (2) -->
+            <div class="major">
+              <div class="major__icon">
+                <i class="fa-brands fa-react"></i>
+              </div>
+              <h2 class="major__title">React</h2>
+              <p class="major__description">
+                리액트의 철학을 좋아하여<br />
+                개인적으로 프로젝트를<br />진행하고 있습니다.
+              </p>
+            </div>
+            <!-- about 3 -->
+            <div class="major">
+              <div class="major__icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <h2 class="major__title">HTML & CSS</h2>
+              <p class="major__description">
+                웹 표준과 접근성을 준수하여<br />
+                반응형 웹 페이지를<br />제작할 수 있습니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- Work ---------->
+    <section id="work" class="section">
+      <div class="section__container">
+        <h1>My work</h1>
+        <h3>아래 버튼을 클릭하여 프로젝트를 확인해보세요.</h3>
+        <div class="work__categories">
+          <button class="category__btn selected" data-filter="*">
+            All<span class="category__count">4</span>
+          </button>
+          <button class="category__btn" data-filter="team-project">
+            Team-project
+            <span class="category__count">1</span>
+          </button>
+          <button class="category__btn" data-filter="front-end">
+            Front-end
+            <span class="category__count">3</span>
+          </button>
+          <div class="work__projects">
+            <!-- Project (1) -->
+            <a
+              href="https://youtu.be/ydF21Nnpn8c"
+              class="project"
+              target="_blank"
+              data-type="team-project"
+            >
+              <img
+                src="imgs/projects/teamproject.png"
+                alt="project-name"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h4>트리플랜: <br />당신의 일정을 공유하세요!</h4>
+                <span>Skills: BootStrap, HTML, CSS</span>
+              </div>
+            </a>
+            <!-- Project (2) -->
+            <a
+              href="https://github.com"
+              class="project"
+              target="_blank"
+              data-type="front-end"
+            >
+              <img
+                src="imgs/projects/portfolio.png"
+                alt="project-name"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h4>포트폴리오 웹사이트</h4>
+                <span>Skills: JavaScript, HTML, CSS</span>
+              </div>
+            </a>
+            <!-- Project (3) -->
+            <a
+              href="https://github.com/hyojolly/todolist"
+              class="project"
+              target="_blank"
+              data-type="front-end"
+            >
+              <img
+                src="imgs/projects/Reactproject.png"
+                alt="project-name"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h4>리액트 투두리스트</h4>
+                <span>Skills: React, HTML, CSS</span>
+              </div>
+            </a>
+            <!-- Project (4) -->
+            <a
+              href="https://github.com/hyojolly/kakaotalk-clonecoding"
+              class="project"
+              target="_blank"
+              data-type="front-end"
+            >
+              <img
+                src="imgs/projects/kakaotalk.png"
+                alt="project-name"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h4>카카오톡 클론코딩</h4>
+                <span>Skills: HTML, CSS</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---------- Contact ---------->
+    <section id="contact" class="section">
+      <h1 class="contact__title">Let's talk</h1>
+      <h2 class="contact__email">jhj_722@naver.com</h2>
+      <div class="contact__links">
+        <a href="https://github.com/hyojolly" target="_blank">
+          <i class="fa-brands fa-square-github"></i>
+        </a>
+      </div>
+      <p class="contact__rights">ⓒ 2023. Hyo Jung Jang - All rights reserved</p>
+    </section>
+    <!---------- Arrow up ---------->
+    <button class="arrow-up">⬆</button>
+  </body>
+</html>
